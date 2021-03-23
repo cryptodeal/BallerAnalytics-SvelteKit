@@ -2,7 +2,6 @@ dependencies:
   svelte-forms-lib: 1.10.1
   svelte-notifications: 0.9.9
   svelte-simple-modal: 0.9.0_svelte@3.35.0
-  yup: 0.32.9
 devDependencies:
   '@sveltejs/adapter-node': 1.0.0-next.9
   '@sveltejs/kit': 1.0.0-next.55_svelte@3.35.0+vite@2.1.2
@@ -10,12 +9,13 @@ devDependencies:
   jsonwebtoken: 8.5.1
   svelte: 3.35.0
   vite: 2.1.2
+  yup: 0.32.9
 lockfileVersion: 5.2
 packages:
   /@babel/runtime/7.13.10:
     dependencies:
       regenerator-runtime: 0.13.7
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
   /@rollup/pluginutils/4.1.0:
@@ -68,7 +68,7 @@ packages:
     resolution:
       integrity: sha512-RVjafsqziWwnQm8VEy2y0qNaugNDvRd8tTaCt9rjgQkqaS/BDiyDCluXxA28PRC+ddZjvwUeq9k+0EfbLVObfg==
   /@types/lodash/4.14.168:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
   /ansi-styles/4.3.0:
@@ -226,7 +226,7 @@ packages:
     resolution:
       integrity: sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
   /lodash-es/4.17.21:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
   /lodash.includes/4.3.0:
@@ -258,7 +258,7 @@ packages:
     resolution:
       integrity: sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
   /lodash/4.17.21:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
   /mri/1.1.6:
@@ -276,7 +276,7 @@ packages:
     resolution:
       integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
   /nanoclone/0.2.1:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==
   /nanoid/3.1.22:
@@ -307,11 +307,11 @@ packages:
     resolution:
       integrity: sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
   /property-expr/2.0.4:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-sFPkHQjVKheDNnPvotjQmm3KD3uk1fWKUN7CrpdbwmUx3CrG3QiM8QpTSimvig5vTXmTvjz7+TDvXOI9+4rkcg==
   /regenerator-runtime/0.13.7:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /require-relative/0.8.7:
@@ -410,7 +410,7 @@ packages:
     resolution:
       integrity: sha512-gknlZkR2sXheu/X+B7dDImwANVvK1R0QGQLd8CNIfxxGPeXBmePnxfzb6fWwTQRsYQG7lYkZXvpXJvxvpsoB7g==
   /toposort/2.0.2:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=
   /vite/2.1.2:
@@ -436,7 +436,7 @@ packages:
       nanoclone: 0.2.1
       property-expr: 2.0.4
       toposort: 2.0.2
-    dev: false
+    dev: true
     engines:
       node: '>=10'
     resolution:
