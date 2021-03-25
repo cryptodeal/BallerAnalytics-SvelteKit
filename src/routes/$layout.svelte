@@ -1,6 +1,7 @@
 <script>
   import { page, navigating } from '$app/stores';
   import Nav from '$lib/Nav.svelte'
+  import Image from "svelte-image/src";
   import Notifications from 'svelte-notifications';
 	import PreloadingIndicator from '$lib/PreloadingIndicator.svelte';
 
@@ -30,6 +31,9 @@
 </style>
 
 <Notifications>
+  <div class='logo-container'>
+    <Image src='title.png' alt="Tankie News Network logo"/>
+  </div>
   <Nav {segment}/>
 
   {#if $navigating}
