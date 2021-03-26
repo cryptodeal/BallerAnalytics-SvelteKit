@@ -1,9 +1,10 @@
 <script>
   import { page, navigating } from '$app/stores';
   import Nav from '$lib/Nav.svelte'
-  import Image from "svelte-image/src";
   import Notifications from 'svelte-notifications';
 	import PreloadingIndicator from '$lib/PreloadingIndicator.svelte';
+  
+  import Logo2 from '../../static/title.png?w=300;400;500&format=webp&srcset'
 
   $: segment = $page.path.split('/')[1];
 </script>
@@ -25,14 +26,17 @@
   :global(.ql-align-right) {
     text-align: right;
   }
+  .logo-container {
+		width: 100%;
+  }
   :global(.cool) {
-    object-fit: scale-down;
+    object-fit: contain;
   }
 </style>
 
 <Notifications>
   <div class='logo-container'>
-    <Image src='title.png' alt="Tankie News Network logo"/>
+      <img class='cool' srcset={Logo2} type="image/webp" alt="testattribute"/>
   </div>
   <Nav {segment}/>
 
